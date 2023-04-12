@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body{
+    background-color: #fdfbfb;
+    margin-top: 95px;
+    font-family: Roboto, Arial;
+    margin-left: 70px;
+    height: 3000px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.thumbnail-row{
+    position: relative;
+    margin-bottom: 10px;
+    height: 202px;
+    width: 360px;
+    vertical-align: top; 
+}
+.video-time{
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 4px;
+    transition: opacity 0.1s;
+    font-size: 14px;
+}
+.video-time:hover{
+    opacity: 0.5;
+}
+#video-thumbnail{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    border-style: solid 5px;
+    transition: all 0.3s;
+}
+#video-thumbnail:hover{
+    opacity: 0.8;
+}
+#video-thumbnail:active{
+    opacity: 0.4;
+}
+#user-logo{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+#user-logo:hover{
+    opacity: 0.8;
+}
+.video-info-grid{
+    display: grid;
+    text-align: start;
+    grid-template-columns: 48px 1fr;
+}
+.video-title{
+    font-family: "Roboto","Arial",sans-serif;
+    cursor: pointer;
+    padding-left: 10px;
+    width: 300px;
+    font-weight: 501;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.channel-title{
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 200px;
+    cursor: pointer;
+    font-weight: 300;
+    color: #606060;
+    transition: 0.2s;
+}
+.channel-title:hover{
+    color: #3f3f3f;
+}
+.video-stats{
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 0;
+    color: #606060;
+}
+.video-grid{
+    padding: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: 355px 355px 355px 1fr;
+}
+::selection{
+
+    color: white;
+    background-color: red;
+}
+
+/*              scrollbar                */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #555;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+
+@media(max-width: 1366px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 900px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}

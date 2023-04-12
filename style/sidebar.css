@@ -1,0 +1,27 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 45px;
+    z-index: 9999;
+    background-color: white;
+    width: 80px;
+}
+.sidebar-menu-item{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 76px;
+    background-color: transparent;
+    align-items: center;
+    font-size: 11px;
+    font-weight: normal;
+}
+.sidebar-menu-item:hover{
+    background-color: rgb(235, 235, 235);
+}
+.sidebar-menu-item img{
+    height: 24px;
+    margin-bottom: 5px;
+}
