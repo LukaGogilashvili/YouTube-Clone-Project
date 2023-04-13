@@ -1,0 +1,15 @@
+@media (min-width: 870px) and (max-width: 1500px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 800px) and (max-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+}
