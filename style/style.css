@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-@media(max-width: 750px){
-    .video-grid{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media(min-width: 751px) and (max-width:999px){
-    .video-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-@media(min-width: 1000px){
-    .video-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-
 body{
     background-color: #fdfbfb;
     margin-top: 95px;
@@ -137,4 +120,20 @@ body{
 
 *::-webkit-scrollbar-thumb:hover {
     background-color: #888;
+}
+
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
