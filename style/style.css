@@ -144,8 +144,8 @@ body{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px) {
     .video-grid{
-        grid-template-columns: 355px 355px 355px 355px;
-        grid-column-gap: 20px;
+        grid-template-columns: 355px 355px 355px;
+        padding-inline: 120px;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
